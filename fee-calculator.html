@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset='8-UTF'/>
+    <title>Fee Calculator</title>
+    <link rel="stylesheet" href="./css/fee-calc-style.css">
+</head>
+<body>
+    <header>
+        <h1>Fee Calculator</h1>
+    </header>
+    <main>
+        <section class='results'>
+            <article class='results-box'>
+                <h2>Fee Results</h2>
+                <ul>
+                    <li id='clean-fee'>Cleaning Fee:</li>
+                    <li id='hidden-fee'>Hidden Fee:</li>
+                    <li id='damage-waver'>Damage Waver:</li>
+                    <li id='vrbo-fee'>VRBO Total Fee:</li>
+                    <li id='maintenance-fee'>Maintenance Fee:</li>
+                    <li id='linen-fee'>Linen Fee:</li>
+                    <li id='house-keeper-fee'>House Keeper Fee:</li>
+                </ul>
+            </article>
+            <button id='submit'>Calculate</button>
+            <p id='error'></p>
+        </section>
+        <aside class='fee-variables'>
+            <h2>Home Information</h2>
+            <form action='/fee-results.html'>
+                <label for='sqft'>SQFT:</label>
+                <input type='number' id='sqft' name='sqft' value='sqft' required>
+                <label for='bedrooms'>Bedrooms:</label>
+                <input type='number' id='bedrooms' name='bedrooms' value='bedrooms' required>
+                <label for='bathrooms'>Bathrooms:</label>
+                <input type='number' id='bathrooms' name='bathrooms' value='bathrooms' required>
+                <label for='neighborhood'>neighborhood:</label>
+                <select name='neighborhood' id='neighborhood' required>
+                    <option value='paradise-village'>Paradise Village</option>
+                </select>
+            </form>
+        </aside>
+    </main>
+    <script type='text/javascript' src=./js/fee-calculations.js></script>
+    <script type='text/javascript' src='./js/feeinterface.js'></script>
+</body>

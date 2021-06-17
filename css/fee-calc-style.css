@@ -1,0 +1,67 @@
+body {
+    /*border: 20px ridge hsla(0,100%,50%,1.0);*/
+    margin: 0px;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 75px;
+    padding: 10px;
+    margin: 10px auto;
+    border-bottom: 5px ridge hsla(0,100%,50%,1);
+}
+
+.results {
+    text-align: center;
+    position: relative;
+    margin-bottom: 1em;
+    display: block;
+}
+
+.results h2 {
+    border-bottom: 5px ridge hsla(0,100%,50%,1);
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.results-box {
+    border: 5px ridge hsla(0,100%,50%,1);
+    width: 600px;
+    height: auto;
+    display: inline-block;
+    text-align: justify;
+    background-color: hsla(250,50%,5%,0.1)
+}
+
+.results-box li {
+    list-style-type: none;
+    text-align: left;
+}
+
+#submit {
+    float: right;
+    position: relative;
+    display: block;
+    font-size: 50px;
+    background-color: hsla(0,100%,35%,1);
+    border-radius: 25px;
+    margin: 1em 5em 1em 0em;
+    text-align: center;
+}
+
+.fee-variables {
+    text-align: center;
+    position: relative;
+    display: block;
+    border: 5px ridge hsla(0,100%,50%,1);
+    background-color: hsla(250,50%,5%,0.1);
+}
+
+.fee-variables h2 {
+    border-bottom: 5px ridge hsla(0,100%,50%,1);
+}
+
+.fee-variables input, select {
+    margin-bottom: 1em;
+}
